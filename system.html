@@ -5,8 +5,8 @@
     <head>
         <meta charset="utf8"	/>
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
-        <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" />
-		<link href="{{ url_for('static', filename='favicon.png') }}" rel="icon" sizes="64x64" />
+        <link href="css/main.css" rel="stylesheet" />
+		<link href="img/favicon.png" rel="icon" sizes="64x64" />
         <title>{{ titre }}</title>
     </head>
 
@@ -16,21 +16,21 @@
         <div id="nav">
             <span id="nav_title">Navigation :</span><br />
             
-                <ul><li><a href="{{ url_for('index') }}">Accueil</a></li></ul>
-                <ul><li><a href="{{ url_for('galaxy') }}">Galaxies</a></li></ul>
-                <ul><li><a href="{{ url_for('system') }}" class="actual">Systèmes</a></li>
+                <ul><li><a href="index.html">Accueil</a></li></ul>
+                <ul><li><a href="galaxy.html">Galaxies</a></li></ul>
+                <ul><li><a href="system.html" class="actual">Systèmes</a></li>
                 <div id="nav_nd">
                     <ul>
-                        <li><a href="{{ url_for('system', _anchor='sys_pla') }}">Système Planétaire</a></li>
-                        <li><a href="{{ url_for('system', _anchor='sys_ste') }}">Système Stellaire</a></li>
-                        <li><a href="{{ url_for('system', _anchor='sys_sol') }}">Système Solaire</a></li>
+                        <li><a href="#sys_pla">Système Planétaire</a></li>
+                        <li><a href="#sys_ste">Système Stellaire</a></li>
+                        <li><a href="#sys_sol">Système Solaire</a></li>
                     </ul>
                 </div>
                 </ul>
-                <ul><li><a href="{{ url_for('contact') }}">Contact</a></li></ul>
+                <ul><li><a href="contact.html">Contact</a></li></ul>
             <br />
             <br />
-            <ul><li><a href="{{ url_for('dark_system') }}">Dark Mode</a></li></ul>
+            <ul><li><a href="dark_system.html">Dark Mode</a></li></ul>
             <p>
                 <br />
                 <br />
@@ -60,7 +60,7 @@
 
         <div id="gotop">
             <a href="#">
-            <img src="{{ url_for('static', filename='css/fusee.png') }}" id="fusee" alt="Aller en Haut de la Page"/>
+            <img src="img/fusee.png" id="fusee" alt="Aller en Haut de la Page"/>
             <br />
             </a>
         </div>
@@ -75,29 +75,16 @@
                     des astéroïdes et comètes, le tout gravitant autour d'une étoile.<br />
                 </p>
                 <p class="text">
-                    <span class="tab"></span>Le <a href="{{ url_for('system', _anchor='sys_sol') }}">Système solaire</a> 
+                    <span class="tab"></span>Le <a href="#sys_sol">Système solaire</a> 
                     étant un système planétaire, le terme « système solaire » est souvent utilisé pour désigner d’autres systèmes planétaires : c'est un abus de language.<br />
                     <br />
                     <span class="tab"></span>Un système planétaire autour d'une étoile de type solaire (en dehors du Système Solaire) est appelé "système exoplanétaire".
-                    Le premier découvert à été celui de <a href="{{ url_for('system', _anchor='one') }}">l'étoile 51 Pegasi ¹</a> en 1995.
-                    Depuis ce temps, des centaines de planètes <a href="{{ url_for('system', _anchor='two') }}">extra-solaires ²</a> ont été découvertes.<br />
+                    Le premier découvert à été celui de <a href="#one">l'étoile 51 Pegasi ¹</a> en 1995.
+                    Depuis ce temps, des centaines de planètes <a href="#two">extra-solaires ²</a> ont été découvertes.<br />
                     <br />
-                </p>
-                <div class="box_img">
-                    <a href="static/css/pegasi.png" id="pegasi" target="_blank">
-                        <img src="{{ url_for('static', filename='css/pegasi.png') }}" alt="51 Pegasi" />
-                    </a>
-                    <div class="leg">
-                        Image représentant 51 Pegasi b (ou Dimidium),<br />
-                        l'exoplanète du système 51 Pegasi.
-                    </div>
-                </div>
-                <br />
-                <br />
-                <p class="text">
                     <span class="tab"></span>En général, un système planétaire se développe autour d'une étoile. Dans certains cas, on peut le retrouver autour 
-                    d'un <a href="{{ url_for('system', _anchor='three') }}">pulsar ³</a>, d'une <a href="{{ url_for('system', _anchor='four') }}">naine rouge ⁴</a> 
-                    ou d'une <a href="{{ url_for('system', _anchor='five') }}">naine brune ⁵</a>. 
+                    d'un <a href="#three">pulsar ³</a>, d'une <a href="#four">naine rouge ⁴</a> 
+                    ou d'une <a href="#five">naine brune ⁵</a>. 
                     La très grande majorité des systèmes planétaires connus jusqu'à présent n'est formée que d'une seule planète.
                 </p>
                 <br />
@@ -107,22 +94,13 @@
                 <br />
                 <p class="desc">
                     <span class="tab"></span>Un système stellaire consiste en un petit nombre d'étoiles qui sont liées par 
-                    <a href="{{ url_for('system', _anchor='six') }}">l'attraction gravitationnelle ⁶</a> et de ce fait orbitent les unes autour des autres. 
+                    <a href="#six">l'attraction gravitationnelle ⁶</a> et de ce fait orbitent les unes autour des autres. 
                     Suivant le nombre d'étoiles, on parle de système binaire, triple (ou ternaire), quadruple, etc...
-                    Un grand nombre d'étoiles liées par la gravitation est généralement désigné comme un <a href="{{ url_for('system', _anchor='seven') }}">amas d'étoiles ⁷</a> 
-                    ou bien une <a href="{{ url_for('galaxy', _anchor=' ') }}">galaxie</a>.
+                    Un grand nombre d'étoiles liées par la gravitation est généralement désigné comme un <a href="#seven">amas d'étoiles ⁷</a> 
+                    ou bien une <a href="galaxy', _anchor=' ">galaxie</a>.
                 </p><p class="text">
-                    <span class="tab"></span>On emploie aussi parfois improprement l'expression "système stellaire" pour se référer à un <a href="{{ url_for('system', _anchor='sys_pla') }}">système planétaire</a> de corps plus petits en orbite autour d'une étoile :
+                    <span class="tab"></span>On emploie aussi parfois improprement l'expression "système stellaire" pour se référer à un <a href="#sys_pla">système planétaire</a> de corps plus petits en orbite autour d'une étoile :
                 on ne doit pas confondre "système stellaire" avec "système planétaire" ou "association stellaire".
-                <div class="box_img">
-                    <a href="static/css/sys_ste_binaire.gif" id="sys_ste_binaire" target="_blank">
-                        <img src="{{ url_for('static', filename='css/sys_ste_binaire.gif') }}" alt="système binaire" />
-                    </a>
-                    <div class="leg">
-                        Représentation d'un système stellaire binaire :<br />
-                        deux étoiles sont en attraction gravitationnelle.
-                    </div>
-                </div>
                 </p>
                 <br />
             </div>
@@ -131,29 +109,20 @@
                 <br />
                 <p class="desc">
                     <span class="tab"></span>Le Système solaire est le système planétaire auquel appartient la Terre. Il est composé d'une naine jaune, 
-                    le Soleil, et d'objets célestes gravitant autour de lui. Il y a huit planètes et leurs 185 <a href="{{ url_for('system', _anchor='eight') }}">satellites naturels ⁸</a> connus, 
-                    cinq planètes naines et leurs neuf satellites naturels connus et enfin les milliards de <a href="{{ url_for('system', _anchor='nine') }}">petits corps ⁹</a>.<br />
-                    <span class="tab"></span>Le système solaire fait partie de la galaxie appelée <a href="{{ url_for('galaxy', _anchor=' ') }}">Voie lactée</a>. Il est situé à environ 8 kpc (~26 100 années-lumière) 
-                    du <a href="{{ url_for('system', _anchor='ten') }}">centre galactique ¹⁰</a> et effectue une <a href="{{ url_for('system', _anchor='eleven') }}">révolution ¹¹</a> en 225 à 250 millions d'années.
+                    le Soleil, et d'objets célestes gravitant autour de lui. Il y a huit planètes et leurs 185 <a href="#eight">satellites naturels ⁸</a> connus, 
+                    cinq planètes naines et leurs neuf satellites naturels connus et enfin les milliards de <a href="#nine">petits corps ⁹</a>.<br />
+                    <span class="tab"></span>Le système solaire fait partie de la galaxie appelée <a href="galaxy', _anchor=' ">Voie lactée</a>. Il est situé à environ 8 kpc (~26 100 années-lumière) 
+                    du <a href="#ten">centre galactique ¹⁰</a> et effectue une <a href="#eleven">révolution ¹¹</a> en 225 à 250 millions d'années.
                 </p><p class="text">
                     <span class="tab"></span>De façon schématique, le Système solaire est composé, outre le Soleil lui-même et par ordre de distance croissante à celui-ci, 
                     de quatre planètes telluriques internes qui sont Mercure, Vénus, la Terre et Mars, d'une ceinture d'astéroïdes composée de petits corps rocheux, 
                     de quatre planètes géantes externes, les deux géantes gazeuses que sont Jupiter et Saturne, et les deux planètes géantes de glaces que sont Uranus et Neptune, 
-                    et de <a href="{{ url_for('system', _anchor='twelve') }}">la ceinture de Kuiper ¹²</a>, composée elle-même d’objets glacés. L'héliopause, limite magnétique du Système solaire, est définie par l'arrêt 
+                    et de <a href="#twelve">la ceinture de Kuiper ¹²</a>, composée elle-même d’objets glacés. L'héliopause, limite magnétique du Système solaire, est définie par l'arrêt 
                     des vents solaires face au vent galactique. La limite gravitationnelle du Système solaire se situe jusqu'à 1 ou 2 années-lumière du Soleil.
                 </p><p class="desc">
                     <span class="tab"></span>Toutes les planètes du Système solaire à partir de la Terre possèdent des satellites en orbite, 
                     tandis que chacune des quatre planètes externes est en outre entourée d’un système d'anneaux de poussière et d’autres particules. 
                     Toutes les planètes, sauf la Terre, ont été nommées d'après des dieux et déesses de la mythologie romaine.
-                    <div class="box_img">
-                        <a href="static/css/sys_sol_rotation.gif" id="sys_sol_rotation" target="_blank">
-                            <img src="{{ url_for('static', filename='css/sys_sol_rotation.gif') }}" alt="rotation du système solaire" />
-                        </a>
-                        <div class="leg">
-                            Représentation de la rotation des planètes<br />
-                            de notre système solaire autour du Soleil.
-                        </div>
-                    </div>
                 </p>
                 <br />
             </div>
@@ -166,7 +135,7 @@
             <br />
             <hr />
             <div id="redirect">
-                <span style="color: rgba(123, 221, 147, 0.856); font-size: 90%;">Pour en savoir plus ==> onglet</span>
+                <span style="color: rgba(123, 221, 147, 0.856); font-size: 90%; margin-left: 3%;">Pour en savoir plus ==> onglet</span>
                 <span style="color: darkcyan;">"Navigation"</span>
             </div>
             <hr />
