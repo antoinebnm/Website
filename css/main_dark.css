@@ -19,7 +19,7 @@ body {
     font-family: 'Space Mono', monospace;
     font-size: 20px;
     color: rgb(0, 0, 0);
-    background: url("img/background.png");
+    background: url("../img/background.png");
 }
 
 #filtre {
@@ -83,7 +83,7 @@ body {
 
 #button a {
     height: auto;
-    background: url('img/fond-bleu.png') repeat-x;
+    background: url('../img/fond-bleu.png') repeat-x;
     border-radius: 10px;
     font-size: 1.5em;
     text-align: center;
