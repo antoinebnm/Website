@@ -720,6 +720,13 @@ input, select, textarea {
 
 		}
 
+		#galaxy-icon {
+			height: 88px;
+			width: 88px;
+			position: relative;
+			display: block;
+		}
+
 /* List */
 
 	ol {
@@ -1111,7 +1118,7 @@ input, select, textarea {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
-		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1158,7 +1165,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/galaxy-back.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1298,14 +1305,12 @@ input, select, textarea {
 			border-radius: 100%;
 		}
 
+		div .logo:after {
+			background-image: url("../../images/galaxy-icon.png");
+		}
+
 			#header .logo .icon:before {
 				font-size: 2rem;
-			}
-
-			.icon .fa-gem {
-				background: url('../../images/galaxy-icon.png');
-				width: 88px;
-				height: 88px;
 			}
 
 		#header .content {
