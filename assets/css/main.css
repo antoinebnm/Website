@@ -1302,6 +1302,12 @@ input, select, textarea {
 				font-size: 2rem;
 			}
 
+			.icon .fa-gem {
+				background: url('../../images/galaxy-icon.png');
+				width: 88px;
+				height: 88px;
+			}
+
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
