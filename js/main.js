@@ -1,6 +1,6 @@
 function playsound(button) {
-    var element = document.getElementsByClassName(button);
-    document.getElementById("output").innerHTML = element;
+    let element = document.getElementsByClassName(button);
+    document.getElementById("output").innerText = element;
 /*    if(element.class == "on") {
         element.class = "off"
     }else{
