@@ -5,7 +5,7 @@
 
 # DS and auto ignore
 .DS-Store
-.gitignore
+#.gitignore
 
 # User-specific files
 *.rsuser

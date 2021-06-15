@@ -2,14 +2,17 @@
 <html>
     <head>
         <title>Soundboard</title>
+        <link rel="favicon" href="https://avatars.githubusercontent.com/u/48771934?s=48&v=4">
         <link type="stylesheet" rel="css/main.css"/>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
-        <div class="drum1">
-            <p id="output">Output</p>
-            <input type="checkbox" id="drum1" class="button" name="drum1" onclick="playsound(self)"/>
-            <label for="drum1" class="off">Drum 1</label>
+        <p id="output">Output</p>
+        <div class="drum">
+            <input type="checkbox" id="drum1" class="button" name="drum1" onclick="playsound()"/>
+            <label for="drum1" class="off">Drum 1</label></br>
+            <input type="checkbox" id="drum2" class="button" name="drum2" onclick="playsound()"/>
+            <label for="drum2" class="off">Drum 2</label></br>
         </div>
     </body>
 </html>
